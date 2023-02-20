@@ -59,7 +59,7 @@ function GuardianDetailsForm({ newStudent, setNewStudent }) {
                 />
                 <label
                   htmlFor="sameAsFather"
-                  className="ml-2 block text-sm text-gray-500"
+                  className="ml-2 block text-xs text-gray-500 sm:text-sm"
                 >
                   Same as father
                 </label>
@@ -73,7 +73,7 @@ function GuardianDetailsForm({ newStudent, setNewStudent }) {
                 />
                 <label
                   htmlFor="sameAsMother"
-                  className="ml-2 block text-sm text-gray-500"
+                  className="ml-2 block text-xs text-gray-500 sm:text-sm"
                 >
                   Same as mother
                 </label>
@@ -129,7 +129,7 @@ function GuardianDetailsForm({ newStudent, setNewStudent }) {
                 onChange={inputChangeHandler}
                 className="mt-2 block w-full rounded border-gray-300 focus:border-blue-700 focus:ring-blue-700 sm:text-sm"
               />
-              <div className="mt-2 flex items-start">
+              <div className="mt-2 flex items-center">
                 <div className="flex h-5 items-center">
                   <input
                     id="guardianWhatsAppChecked"
@@ -140,7 +140,7 @@ function GuardianDetailsForm({ newStudent, setNewStudent }) {
                     onChange={handleWhatsAppCheckbox}
                   />
                 </div>
-                <div className="ml-2 text-sm">
+                <div className="ml-2 text-xs sm:text-sm">
                   <label
                     htmlFor="guardianWhatsAppChecked"
                     className=" text-gray-500"

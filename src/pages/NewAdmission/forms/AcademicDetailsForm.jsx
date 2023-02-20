@@ -30,7 +30,7 @@ function AcademicDetailsForm({ newStudent, setNewStudent }) {
     <>
       <div className="px-4 py-5 sm:p-6">
         <div className="grid grid-cols-6 gap-6">
-          <div className="col-span-2">
+          <div className="col-span-6 sm:col-span-2">
             <label
               htmlFor="dateOfAdmission"
               className="block text-sm font-medium text-gray-600"
@@ -47,7 +47,7 @@ function AcademicDetailsForm({ newStudent, setNewStudent }) {
             />
           </div>
 
-          <div className="col-span-2">
+          <div className="col-span-6 sm:col-span-2">
             <label
               htmlFor="classEnrolled"
               className="block text-sm font-medium text-gray-600"
@@ -64,7 +64,7 @@ function AcademicDetailsForm({ newStudent, setNewStudent }) {
             />
           </div>
 
-          <div className="col-span-2">
+          <div className="col-span-6 sm:col-span-2">
             <label
               htmlFor="sectionAssigned"
               className="block text-sm font-medium text-gray-600"
