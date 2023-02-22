@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react";
-import AcademicDetailsForm from "./forms/AcademicDetailsForm";
-import GuardianDetailsForm from "./forms/GuardianDetailsForm";
-import IndividualDetailsForm from "./forms/IndividualDetailsForm";
-import PreviousSchoolDetailsForm from "./forms/PreviousSchoolDetailsForm";
+import AcademicDetailsForm from "./sc_forms/AcademicDetailsForm";
+import GuardianDetailsForm from "./sc_forms/GuardianDetailsForm";
+import IndividualDetailsForm from "./sc_forms/IndividualDetailsForm";
+import PreviousSchoolDetailsForm from "./sc_forms/PreviousSchoolDetailsForm";
 
 function UpdateSpan() {
   return <span className="text-gray-300">N/A</span>;
@@ -66,7 +66,7 @@ function NewAdmission() {
       <div className="ie-na-content mt-5 flex w-full flex-col gap-10 2xl:flex-row">
         <form
           onSubmit={submitFormHandler}
-          className="flex w-full flex-col items-end gap-10 2xl:w-8/12"
+          className="flex w-full flex-col items-end gap-10 2xl:max-w-5xl"
         >
           {/* INDIVIDUAL DETAILS FORM */}
           <div className="IndividualDetails w-full rounded-md border border-gray-200 bg-white">
@@ -125,11 +125,11 @@ function NewAdmission() {
           </button>
         </form>
 
-        <div className="ie-nc-summary h-fit flex-grow rounded-md border border-gray-200 bg-white py-4 px-6 sm:sticky sm:top-10 ">
+        <div className="ie-nc-summary h-fit flex-1 rounded-md border border-gray-200 bg-white py-4 px-6 sm:sticky sm:top-10 ">
           <span className="summaryTitle text-lg font-medium">Summary</span>
           <div className="summaryInfo mt-3 rounded-md bg-gray-50 p-5">
             <span className="text block w-fit rounded-full bg-gray-900 px-3 py-1 text-xs text-white">
-              {"#" + newStudent.studentId}
+              {newStudent.studentId}
             </span>
             <span className="mt-2 block whitespace-normal text-3xl font-semibold text-gray-900">
               {newStudent.studentFirstName != "" ? (
