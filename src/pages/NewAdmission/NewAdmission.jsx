@@ -15,8 +15,9 @@ function NewAdmission() {
     studentDateOfBirth: "",
     studentReligion: "",
     studentCaste: "",
-    studentBloodGroup: "",
     studentEmail: "",
+    studentSex: "",
+    studentBloodGroup: "",
     fatherFullName: "",
     motherFullName: "",
     addressStreet: "",
@@ -39,12 +40,37 @@ function NewAdmission() {
 
   const submitFormHandler = (event) => {
     event.preventDefault();
-    console.log("SUBMITTED!", newStudent, typeof newStudent);
+    alert("Form Submitted");
+    setNewStudent({
+      studentFirstName: "",
+      studentMiddleLastName: "",
+      studentDateOfBirth: "",
+      studentReligion: "",
+      studentCaste: "",
+      studentEmail: "",
+      studentSex: "",
+      studentBloodGroup: "",
+      fatherFullName: "",
+      motherFullName: "",
+      addressStreet: "",
+      addressCity: "",
+      addressState: "",
+      addressZipCode: "",
+      studentId: "SVPSAS230001",
+      dateOfAdmission: "",
+      classEnrolled: "",
+      sectionAssigned: "",
+      guardianFullName: "",
+      guardianEmail: "",
+      guardianPhone: "",
+      guardianWhatsApp: "",
+      previousSchoolName: "",
+      previousSchoolAddress: "",
+    });
   };
 
   const submitAlt = () => {
     submitButtonRef.current.click();
-    console.log("clicked admit outside form");
   };
 
   return (
@@ -68,7 +94,6 @@ function NewAdmission() {
           onSubmit={submitFormHandler}
           className="flex w-full flex-col items-end gap-10 2xl:max-w-5xl"
         >
-          {/* INDIVIDUAL DETAILS FORM */}
           <div className="IndividualDetails w-full rounded-md border border-gray-200 bg-white">
             <div className="border-b border-gray-200 py-4 px-6">
               <span className="text-lg font-medium">Individual Details</span>
@@ -79,7 +104,6 @@ function NewAdmission() {
             />
           </div>
 
-          {/* ACADEMIC DETAILS FORM */}
           <div className="personalDetails w-full rounded-md border border-gray-200 bg-white">
             <div className="border-b border-gray-200 py-4 px-6">
               <span className="text-lg font-medium">Academic Details</span>
@@ -90,7 +114,6 @@ function NewAdmission() {
             />
           </div>
 
-          {/* GUARDIAN DETAILS FORM */}
           <div className="personalDetails w-full rounded-md border border-gray-200 bg-white">
             <div className="border-b border-gray-200 py-4 px-6">
               <span className="text-lg font-medium">Guardian Details</span>
@@ -101,7 +124,6 @@ function NewAdmission() {
             />
           </div>
 
-          {/* PREVIOUS SCHOOL DETAILS FORM */}
           <div
             id="previous-school"
             className="personalDetails w-full rounded-md border border-gray-200 bg-white"
@@ -125,7 +147,7 @@ function NewAdmission() {
           </button>
         </form>
 
-        <div className="ie-nc-summary h-fit flex-1 rounded-md border border-gray-200 bg-white py-4 px-6 sm:sticky sm:top-10 ">
+        <div className="ie-nc-summary h-fit flex-1 rounded-md border border-gray-200 bg-white py-4 px-6">
           <span className="summaryTitle text-lg font-medium">Summary</span>
           <div className="summaryInfo mt-3 rounded-md bg-gray-50 p-5">
             <span className="text block w-fit rounded-full bg-gray-900 px-3 py-1 text-xs text-white">

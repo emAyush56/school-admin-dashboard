@@ -18,13 +18,14 @@ function IndividualDetailsForm({ newStudent, setNewStudent }) {
                 First name
               </label>
               <input
+                autoFocus
                 required
                 type="text"
                 name="studentFirstName"
                 id="studentFirstName"
                 value={newStudent.studentFirstName}
                 onChange={inputChangeHandler}
-                className="mt-2 block w-full rounded border-gray-300 focus:border-blue-700 focus:ring-blue-700 sm:text-sm"
+                className="mt-2 block w-full rounded border-gray-300 text-gray-900 transition ease-in focus:border-gray-900 focus:outline-none focus:ring-0 sm:text-sm"
               />
             </div>
 
@@ -41,7 +42,7 @@ function IndividualDetailsForm({ newStudent, setNewStudent }) {
                 id="studentMiddleLastName"
                 value={newStudent.studentMiddleLastName}
                 onChange={inputChangeHandler}
-                className="mt-2 block w-full rounded border-gray-300 focus:border-blue-700 focus:ring-blue-700 sm:text-sm"
+                className="mt-2 block w-full rounded border-gray-300 text-gray-900 transition ease-in focus:border-gray-900 focus:outline-none focus:ring-0 sm:text-sm"
               />
             </div>
 
@@ -58,7 +59,7 @@ function IndividualDetailsForm({ newStudent, setNewStudent }) {
                 id="studentDateOfBirth"
                 value={newStudent.studentDateOfBirth}
                 onChange={inputChangeHandler}
-                className="mt-2 block w-full rounded border-gray-300 focus:border-blue-700 focus:ring-blue-700 sm:text-sm"
+                className="mt-2 block w-full rounded border-gray-300 text-gray-900 transition ease-in focus:border-gray-900 focus:outline-none focus:ring-0 sm:text-sm"
               />
             </div>
 
@@ -75,7 +76,7 @@ function IndividualDetailsForm({ newStudent, setNewStudent }) {
                 id="studentReligion"
                 value={newStudent.studentReligion}
                 onChange={inputChangeHandler}
-                className="mt-2 block w-full rounded border-gray-300 focus:border-blue-700 focus:ring-blue-700 sm:text-sm"
+                className="mt-2 block w-full rounded border-gray-300 text-gray-900 transition ease-in focus:border-gray-900 focus:outline-none focus:ring-0 sm:text-sm"
               />
             </div>
 
@@ -92,11 +93,11 @@ function IndividualDetailsForm({ newStudent, setNewStudent }) {
                 id="studentCaste"
                 value={newStudent.studentCaste}
                 onChange={inputChangeHandler}
-                className="mt-2 block w-full rounded border-gray-300 focus:border-blue-700 focus:ring-blue-700 sm:text-sm"
+                className="mt-2 block w-full rounded border-gray-300 text-gray-900 transition ease-in focus:border-gray-900 focus:outline-none focus:ring-0 sm:text-sm"
               />
             </div>
 
-            <div className="col-span-6 sm:col-span-4">
+            <div className="col-span-6 sm:col-span-2">
               <label
                 htmlFor="studentEmail"
                 className="block text-sm font-medium text-gray-600"
@@ -109,7 +110,24 @@ function IndividualDetailsForm({ newStudent, setNewStudent }) {
                 id="studentEmail"
                 value={newStudent.studentEmail}
                 onChange={inputChangeHandler}
-                className="mt-2 block w-full rounded border-gray-300 focus:border-blue-700 focus:ring-blue-700 sm:text-sm"
+                className="mt-2 block w-full rounded border-gray-300 text-gray-900 transition ease-in focus:border-gray-900 focus:outline-none focus:ring-0 sm:text-sm"
+              />
+            </div>
+
+            <div className="col-span-6 sm:col-span-3 lg:col-span-2">
+              <label
+                htmlFor="studentSex"
+                className="block text-sm font-medium text-gray-600"
+              >
+                Sex
+              </label>
+              <input
+                type="text"
+                name="studentSex"
+                id="studentSex"
+                value={newStudent.studentSex}
+                onChange={inputChangeHandler}
+                className="mt-2 block w-full rounded border-gray-300 text-gray-900 transition ease-in focus:border-gray-900 focus:outline-none focus:ring-0 sm:text-sm"
               />
             </div>
 
@@ -126,7 +144,7 @@ function IndividualDetailsForm({ newStudent, setNewStudent }) {
                 id="studentBloodGroup"
                 value={newStudent.studentBloodGroup}
                 onChange={inputChangeHandler}
-                className="mt-2 block w-full rounded border-gray-300 focus:border-blue-700 focus:ring-blue-700 sm:text-sm"
+                className="mt-2 block w-full rounded border-gray-300 text-gray-900 transition ease-in focus:border-gray-900 focus:outline-none focus:ring-0 sm:text-sm"
               />
             </div>
 
@@ -143,7 +161,7 @@ function IndividualDetailsForm({ newStudent, setNewStudent }) {
                 id="fatherFullName"
                 value={newStudent.fatherFullName}
                 onChange={inputChangeHandler}
-                className="mt-2 block w-full rounded border-gray-300 focus:border-blue-700 focus:ring-blue-700 sm:text-sm"
+                className="mt-2 block w-full rounded border-gray-300 text-gray-900 transition ease-in focus:border-gray-900 focus:outline-none focus:ring-0 sm:text-sm"
               />
             </div>
 
@@ -160,7 +178,7 @@ function IndividualDetailsForm({ newStudent, setNewStudent }) {
                 id="motherFullName"
                 value={newStudent.motherFullName}
                 onChange={inputChangeHandler}
-                className="mt-2 block w-full rounded border-gray-300 focus:border-blue-700 focus:ring-blue-700 sm:text-sm"
+                className="mt-2 block w-full rounded border-gray-300 text-gray-900 transition ease-in focus:border-gray-900 focus:outline-none focus:ring-0 sm:text-sm"
               />
             </div>
 
@@ -177,7 +195,7 @@ function IndividualDetailsForm({ newStudent, setNewStudent }) {
                 id="addressStreet"
                 value={newStudent.addressStreet}
                 onChange={inputChangeHandler}
-                className="mt-2 block w-full rounded border-gray-300 focus:border-blue-700 focus:ring-blue-700 sm:text-sm"
+                className="mt-2 block w-full rounded border-gray-300 text-gray-900 transition ease-in focus:border-gray-900 focus:outline-none focus:ring-0 sm:text-sm"
               />
             </div>
 
@@ -194,7 +212,7 @@ function IndividualDetailsForm({ newStudent, setNewStudent }) {
                 id="addressCity"
                 value={newStudent.addressCity}
                 onChange={inputChangeHandler}
-                className="mt-2 block w-full rounded border-gray-300 focus:border-blue-700 focus:ring-blue-700 sm:text-sm"
+                className="mt-2 block w-full rounded border-gray-300 text-gray-900 transition ease-in focus:border-gray-900 focus:outline-none focus:ring-0 sm:text-sm"
               />
             </div>
 
@@ -212,7 +230,7 @@ function IndividualDetailsForm({ newStudent, setNewStudent }) {
                 id="addressState"
                 value={newStudent.addressState}
                 onChange={inputChangeHandler}
-                className="mt-2 block w-full rounded border-gray-300 focus:border-blue-700 focus:ring-blue-700 sm:text-sm"
+                className="mt-2 block w-full rounded border-gray-300 text-gray-900 transition ease-in focus:border-gray-900 focus:outline-none focus:ring-0 sm:text-sm"
               />
             </div>
 
@@ -229,7 +247,7 @@ function IndividualDetailsForm({ newStudent, setNewStudent }) {
                 id="addressZipCode"
                 value={newStudent.addressZipCode}
                 onChange={inputChangeHandler}
-                className="mt-2 block w-full rounded border-gray-300 focus:border-blue-700 focus:ring-blue-700 sm:text-sm"
+                className="mt-2 block w-full rounded border-gray-300 text-gray-900 transition ease-in focus:border-gray-900 focus:outline-none focus:ring-0 sm:text-sm"
               />
             </div>
           </div>

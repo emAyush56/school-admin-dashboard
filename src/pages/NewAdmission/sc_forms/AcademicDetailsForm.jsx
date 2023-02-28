@@ -43,7 +43,7 @@ function AcademicDetailsForm({ newStudent, setNewStudent }) {
               id="dateOfAdmission"
               value={newStudent.dateOfAdmission}
               onChange={inputChangeHandler}
-              className="mt-2 block w-full rounded border-gray-300 focus:border-blue-700 focus:ring-blue-700 sm:text-sm"
+              className="mt-2 block w-full rounded border-gray-300 text-gray-900 transition ease-in focus:border-gray-900 focus:outline-none focus:ring-0 sm:text-sm"
             />
           </div>
 
@@ -60,7 +60,7 @@ function AcademicDetailsForm({ newStudent, setNewStudent }) {
               id="classEnrolled"
               value={newStudent.classEnrolled}
               onChange={inputChangeHandler}
-              className="bg-gray mt-2 block w-full rounded border-gray-300 focus:border-blue-700 focus:ring-blue-700 sm:text-sm"
+              className="bg-gray mt-2 block w-full rounded border-gray-300 text-gray-900 transition ease-in focus:border-gray-900 focus:outline-none focus:ring-0 sm:text-sm"
             />
           </div>
 
@@ -77,7 +77,7 @@ function AcademicDetailsForm({ newStudent, setNewStudent }) {
               id="sectionAssigned"
               value={newStudent.sectionAssigned}
               onChange={inputChangeHandler}
-              className="bg-gray mt-2 block w-full rounded border-gray-300 focus:border-blue-700 focus:ring-blue-700 sm:text-sm"
+              className="bg-gray mt-2 block w-full rounded border-gray-300 text-gray-900 transition ease-in focus:border-gray-900 focus:outline-none focus:ring-0 sm:text-sm"
             />
           </div>
         </div>

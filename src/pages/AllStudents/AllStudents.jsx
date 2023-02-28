@@ -61,7 +61,7 @@ const AllStudents = () => {
                 <TableHeaderCell>Date of Admission</TableHeaderCell>
                 <TableHeaderCell>Guardian's Name</TableHeaderCell>
                 <TableHeaderCell>Guardian's Phone</TableHeaderCell>
-                <TableHeaderCell>Action</TableHeaderCell>
+                <TableHeaderCell>Actions</TableHeaderCell>
               </TableRow>
             </TableHead>
 
@@ -85,7 +85,13 @@ const AllStudents = () => {
                     <TableCell>
                       <Link
                         to="/svpsas230001"
-                        className="rounded-full bg-orange-200 py-[3px] px-3 text-xs text-orange-800 transition-all hover:bg-orange-100"
+                        className="rounded-full bg-green-200 py-[3px] px-3 text-xs text-green-900 transition-all hover:bg-green-100"
+                      >
+                        View
+                      </Link>
+                      <Link
+                        to="#"
+                        className="ml-3 rounded-full bg-orange-200 py-[3px] px-3 text-xs text-orange-900 transition-all hover:bg-orange-100"
                       >
                         Edit
                       </Link>

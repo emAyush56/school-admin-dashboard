@@ -17,6 +17,8 @@ function PreviousSchoolDetailsForm({ newStudent, setNewStudent }) {
               >
                 Previous school name
               </label>
+              {/* className="mb-5 block w-80 rounded border border-[#EAEAEA] px-3 py-3 text-[#1e1e1e] placeholder-[#999999] transition ease-in focus:border-[#1e1e1e] focus:outline-none" */}
+
               <input
                 required
                 type="text"
@@ -24,7 +26,7 @@ function PreviousSchoolDetailsForm({ newStudent, setNewStudent }) {
                 id="previousSchoolName"
                 value={newStudent.previousSchoolName}
                 onChange={inputChangeHandler}
-                className="mt-2 block w-full rounded border-gray-300 focus:border-blue-700 focus:ring-blue-700 sm:text-sm"
+                className=" mt-2 block w-full rounded border-gray-300 text-gray-900 transition ease-in focus:border-gray-900 focus:outline-none focus:ring-0 sm:text-sm"
               />
             </div>
 
@@ -42,7 +44,7 @@ function PreviousSchoolDetailsForm({ newStudent, setNewStudent }) {
                 id="previousSchoolAddress"
                 value={newStudent.previousSchoolAddress}
                 onChange={inputChangeHandler}
-                className="mt-2 block w-full rounded border-gray-300 focus:border-blue-700 focus:ring-blue-700 sm:text-sm"
+                className=" mt-2 block w-full rounded border-gray-300 text-gray-900 transition ease-in focus:border-gray-900 focus:outline-none focus:ring-0 sm:text-sm"
               />
             </div>
           </div>

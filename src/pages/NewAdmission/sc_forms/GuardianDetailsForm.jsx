@@ -46,7 +46,7 @@ function GuardianDetailsForm({ newStudent, setNewStudent }) {
                 id="guardianFullName"
                 value={newStudent.guardianFullName}
                 onChange={inputChangeHandler}
-                className="mt-2 block w-full rounded border-gray-300 focus:border-blue-700 focus:ring-blue-700 sm:text-sm"
+                className="mt-2 block w-full rounded border-gray-300 text-gray-900 transition ease-in focus:border-gray-900 focus:outline-none focus:ring-0 sm:text-sm"
               />
               <div className="mt-2 flex items-center">
                 <input
@@ -93,7 +93,7 @@ function GuardianDetailsForm({ newStudent, setNewStudent }) {
                 id="guardianEmail"
                 value={newStudent.guardianEmail}
                 onChange={inputChangeHandler}
-                className="mt-2 block w-full rounded border-gray-300 focus:border-blue-700 focus:ring-blue-700 sm:text-sm"
+                className="mt-2 block w-full rounded border-gray-300 text-gray-900 transition ease-in focus:border-gray-900 focus:outline-none focus:ring-0 sm:text-sm"
               />
             </div>
 
@@ -110,7 +110,7 @@ function GuardianDetailsForm({ newStudent, setNewStudent }) {
                 id="guardianPhone"
                 value={newStudent.guardianPhone}
                 onChange={inputChangeHandler}
-                className="mt-2 block w-full rounded border-gray-300 focus:border-blue-700 focus:ring-blue-700 sm:text-sm"
+                className="mt-2 block w-full rounded border-gray-300 text-gray-900 transition ease-in focus:border-gray-900 focus:outline-none focus:ring-0 sm:text-sm"
               />
             </div>
 
@@ -127,7 +127,7 @@ function GuardianDetailsForm({ newStudent, setNewStudent }) {
                 id="guardianWhatsApp"
                 value={newStudent.guardianWhatsApp}
                 onChange={inputChangeHandler}
-                className="mt-2 block w-full rounded border-gray-300 focus:border-blue-700 focus:ring-blue-700 sm:text-sm"
+                className="mt-2 block w-full rounded border-gray-300 text-gray-900 transition ease-in focus:border-gray-900 focus:outline-none focus:ring-0 sm:text-sm"
               />
               <div className="mt-2 flex items-center">
                 <div className="flex h-5 items-center">
