@@ -1,6 +1,6 @@
 # School Admin Dashboard
 
-This is a admin dashboard for a school management application.
+Fully responsive admin dashboard for a school management application with analytics.
 
 # View live
 
