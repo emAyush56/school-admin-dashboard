@@ -27,3 +27,7 @@ The dashboard is fully mobile responsive. You can view it it both PC and mobile.
 ### All Students - single student
 
 ![All Students - single student](./screenshots/4-dashboard-new-admission.PNG)
+
+### Dashboard - mobile responsive
+
+![Dashboard - mobile responsive](./screenshots/7-dashboard-mobile.png)
