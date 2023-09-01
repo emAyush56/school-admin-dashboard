@@ -1,11 +1,14 @@
 import studentData from "../../data/allStudents.json";
 import { PaperClipIcon } from "@heroicons/react/24/outline";
+import { useParams } from "react-router-dom";
 const singleStudent = studentData[0];
 
 function SingleStudent() {
+  const params = useParams();
+  console.log(params);
   return (
     <div className="h-full w-full bg-gray-50 px-3 py-5 xl:px-20 xl:py-12">
-      <header className="ie-as-header flex w-full items-center justify-between">
+      <header className="ie-as-header flex w-full justify-between">
         <h3 className="text-xl font-semibold text-gray-900">
           {singleStudent.studentId +
             " - " +

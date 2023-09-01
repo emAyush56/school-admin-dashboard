@@ -34,13 +34,13 @@ const sidebarLinks = [
 
 function Sidebar() {
   return (
-    <div className="sticky top-0 flex h-screen w-full flex-col justify-between border-r border-gray-200 bg-white px-1 py-5 xl:px-2 xl:py-10">
-      <div className="ie-logo px-3 py-2 text-center xl:text-left">
-        <span className="text-xl font-medium text-gray-900 xl:px-3 xl:text-3xl">
-          sv
+    <div className="sticky top-0 flex h-screen w-full flex-col justify-between border-r border-gray-200 bg-white px-1 py-5 xl:py-12 xl:px-2">
+      <div className="ie-logo px-3 py-0 text-center xl:text-left">
+        <span className="text-xl font-medium text-gray-900 xl:px-3 xl:text-2xl">
+          Admin
         </span>
       </div>
-      <div className="ie-menu mt-12 h-full">
+      <div className="ie-menu mt-8 h-full">
         <div className="flex flex-col items-center gap-3 p-1 xl:items-stretch xl:px-3">
           {sidebarLinks.map((item) => {
             return (

@@ -1,5 +1,4 @@
 import React, { useRef, useState } from "react";
-import { Link } from "react-router-dom";
 import AcademicDetailsForm from "./sc_forms/AcademicDetailsForm";
 import GuardianDetailsForm from "./sc_forms/GuardianDetailsForm";
 import IndividualDetailsForm from "./sc_forms/IndividualDetailsForm";
@@ -9,7 +8,7 @@ function UpdateSpan() {
   return <span className="text-gray-300">N/A</span>;
 }
 
-function NewAdmission() {
+function StudentUpdate() {
   const [newStudent, setNewStudent] = useState({
     studentFirstName: "",
     studentMiddleLastName: "",
@@ -37,7 +36,7 @@ function NewAdmission() {
     previousSchoolAddress: "",
   });
 
-  const submitButtonRef = useRef();
+  const updateButtonRef = useRef();
 
   const submitFormHandler = (event) => {
     event.preventDefault();
@@ -70,27 +69,21 @@ function NewAdmission() {
     });
   };
 
-  const submitAlt = () => {
-    submitButtonRef.current.click();
+  const updateAlt = () => {
+    updateButtonRef.current.click();
   };
 
   return (
     <div className="w-full bg-gray-50 px-3 py-5 xl:px-20 xl:py-12">
-      <header className="ie-na-header flex w-full justify-between">
-        <h3 className="text-xl font-semibold text-gray-900">New Admission</h3>
+      <header className="ie-na-header flex w-full items-center justify-between">
+        <h3 className="text-xl font-semibold text-gray-900">Update Details</h3>
         <div className="flex gap-4">
           <button
-            onClick={submitAlt}
+            onClick={updateAlt}
             className="h-9 rounded border border-blue-700 bg-blue-700 px-8 text-base font-medium text-white transition-all hover:border-blue-800 hover:bg-blue-800"
           >
-            Admit
+            Update
           </button>
-          <Link
-            to="/newadmission/bulkadmit"
-            className="hidden h-9 rounded border border-gray-300 bg-white px-8 text-base font-medium text-gray-700 transition-all hover:border-gray-800 hover:bg-gray-800 hover:text-white sm:flex sm:items-center sm:justify-center"
-          >
-            Bulk Admit
-          </Link>
         </div>
       </header>
       <div className="ie-na-content mt-5 flex w-full flex-col gap-10 2xl:flex-row">
@@ -143,7 +136,7 @@ function NewAdmission() {
             />
           </div>
           <button
-            ref={submitButtonRef}
+            ref={updateButtonRef}
             type="submit"
             className="rounded border border-blue-700 bg-blue-700 px-10 py-2 text-base font-medium text-white transition-all hover:border-blue-800 hover:bg-blue-800"
           >
@@ -243,4 +236,4 @@ function NewAdmission() {
   );
 }
 
-export default NewAdmission;
+export default StudentUpdate;

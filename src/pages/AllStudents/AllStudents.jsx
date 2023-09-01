@@ -23,7 +23,7 @@ const AllStudents = () => {
 
   return (
     <div className="h-full w-full bg-gray-50 px-3 py-5 xl:px-20 xl:py-12">
-      <header className="ie-as-header flex w-full items-center justify-between">
+      <header className="ie-as-header flex w-full justify-between">
         <h3 className="text-xl font-semibold text-gray-900">All Students</h3>
         <div className="flex gap-4">
           <button className="hidden h-9 rounded border border-gray-300 bg-white px-8 text-base font-medium text-gray-700 transition-all hover:border-gray-800 hover:bg-gray-800 hover:text-white sm:block">
@@ -84,7 +84,7 @@ const AllStudents = () => {
                     <TableCell>{item.guardianPhone}</TableCell>
                     <TableCell>
                       <Link
-                        to="/svpsas230001"
+                        to={item.studentId.toLowerCase()}
                         className="rounded-full bg-green-200 py-[3px] px-3 text-xs text-green-900 transition-all hover:bg-green-100"
                       >
                         View
